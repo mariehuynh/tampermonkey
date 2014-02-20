@@ -12,6 +12,6 @@ $(".user_row_item").each(function( index ) {
                      .children(".match")
                      .text();
                      
-    if(parseInt(match) < 80)
+    if(parseInt(match, 10) < 80)
         $( this ).hide();
 });
