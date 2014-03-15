@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        Pinterest Sorter
-// @description Batch prompt to pin everything Liked, toggle liked
+// @description Batch prompt to pin everything Liked, toggle liked on "Likes" page
 // @version     0.1
 // @namespace   http://mariehuynh.com/
-// @include     http://www.pinterest.com/huynh2022/likes/
+// @include     *.pinterest.com/*/likes/
 // @require     http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
