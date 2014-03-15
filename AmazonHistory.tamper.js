@@ -11,7 +11,7 @@ $('body').prepend('<input type="button" value="Check CamelCamelCamel" id="button
 
 $('#button1').click(function(){
     var pathname = window.location.pathname;
-var tokens = pathname.split("/");
+    var tokens = pathname.split("/");
     window.open("http://www.camelcamelcamel.com/" + tokens[1] + "/product/" + tokens[3]);
     return false;
 });
