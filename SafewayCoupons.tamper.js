@@ -7,7 +7,7 @@
 // @require     http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
-$('body').prepend('<input type="button" value="Click All Add" id="button1">')
+$('body').prepend('<input type="button" value="Click All Add Buttons" id="button1">')
 
 $('#button1').click(function(){
     $(".lt-button-primary-add").trigger("click");
