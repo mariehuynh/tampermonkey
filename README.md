@@ -10,3 +10,4 @@ This is a collection of Tampermonkey scripts that I wrote to make the internet b
 
 * **OKCVisitorFilter** - Want a list of high matches who have checked you out?  This hides everyone from your "Visitors" page who is less than an 80% match.  Go ahead.  Have high standards.  You deserve someone awesome.
 
+* **SafewayCoupon** - They offer almost 400 coupons at a time but I didn't want to sift through what might be useful.  So this adds all of them to my card in case it comes in handy.
