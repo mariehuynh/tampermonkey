@@ -8,12 +8,10 @@
 // ==/UserScript==
 $( document ).ready(function() {
 
-    $('#body').prepend('<input type="button" value="Hide All Non-Sales" id="button1" style="top: 123px; z-index: 10; position: absolute;">');
+    $('#body').prepend('<input type="button" value="Hide All Non-Sales" id="button1" style="top: 22px;z-index: 1000; position: absolute; left: 813px;">');
 
     $('#button1').click(function(){
         items = $(".contentArea li").hide();
       	$(".GNVEIADBJUF").closest("li").show();
-        return false; 
     });
 });    
-
