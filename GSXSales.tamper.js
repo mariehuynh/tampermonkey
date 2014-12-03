@@ -12,6 +12,6 @@ $( document ).ready(function() {
 
     $('#button1').click(function(){
         items = $(".contentArea li").hide();     // Hides all the items
-      	$(".GNVEIADBJUF").closest("li").show();  // Shows the sale items; this class may well change in the future
+      	$(".GNVEIADBEWF").closest("li").show();  // Shows the sale items; this class may well change in the future
     });
 });
