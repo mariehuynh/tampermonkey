@@ -4,6 +4,7 @@
 // @version     0.1
 // @namespace   http://mariehuynh.com/
 // @match       www.amazon.com/*/dp/*
+// @match       www.amazon.com/gp/product/*
 // @require     http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
