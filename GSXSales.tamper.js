@@ -12,6 +12,6 @@ $( document ).ready(function() {
 
     $('#button1').click(function(){
         items = $(".contentArea li").hide();     // Hides all the items
-      	$(".GNVEIADBEWF").closest("li").show();  // Shows the sale items; this class may well change in the future
+      	$(".O143VOB-u-F").closest("li").show();  // Shows the sale items; this class may well change in the future
     });
 });
