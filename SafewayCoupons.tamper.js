@@ -10,6 +10,6 @@
 $('body').prepend('<input type="button" value="Click All Add Buttons" id="button1">')
 
 $('#button1').click(function(){
-    $(".lt-button-primary-add").trigger("click");
+    $(".lt-add-offer-gallery").trigger("click");
     return false;
 });
