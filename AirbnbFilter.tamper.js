@@ -9,7 +9,7 @@
 
 $(document).ready(function() {
 
-    $('.cardContainer_gig1e7').each(function( index ) {
+    $('.cardContainer_gig1e7').each(function(index) {
         url = $(this).find("a.anchor_surdeb").attr('href');
         var that = this;
 
