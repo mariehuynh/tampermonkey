@@ -7,7 +7,7 @@
 // @require     http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
-$( document ).ready(function() {
+$(document).ready(function() {
 
     $('.cardContainer_gig1e7').each(function( index ) {
         url = $(this).find("a.anchor_surdeb").attr('href');
