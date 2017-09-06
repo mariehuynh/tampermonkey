@@ -29,8 +29,7 @@ $( document ).ready(function() {
             pets = data.search('_pets":t');
             console.log("pets: "+pets);
 
-
-            // -1 if not found; probably big number if found
+            // pets and smoke are -1 if not found; probably big number if found
             allergens = pets + smoke;
 
             //hide container
