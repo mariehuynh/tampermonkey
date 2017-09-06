@@ -32,8 +32,8 @@ $( document ).ready(function() {
             // pets and smoke are -1 if not found; probably big number if found
             allergens = pets + smoke;
 
-            //hide container
-            if (allergens > 0 ) {
+            // Hide container
+            if(allergens > 0 ) {
                 console.log('hide it');
                 $(that).hide();
             }
