@@ -1,6 +1,7 @@
 Tampermonkey Scripts
 ============
 This is a collection of Tampermonkey scripts that I wrote to make the internet better and save me time.  
+* **Airbnb Filter** - Hides all the search results that allow pets and smoking.  The site only has filters for smokers and pet owners, but not those of us who are allergic and can't stay at those places!  Years have gone by without them adding this simple filter, so this hides those listings on our end.
 
 * **AmazonHistory** - Inserts a button on product pages that links to their price history (I'm currently using camelcamelcamel).
 
