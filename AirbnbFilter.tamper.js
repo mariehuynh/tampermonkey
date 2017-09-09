@@ -19,6 +19,7 @@ $(document).ready(function() {
             url = $(this).find("a").attr('href');
             console.log(url);
 
+            // Punching a hole in scope wall
             var that = this;
 
             // Fetch listings and search
