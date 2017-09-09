@@ -8,34 +8,45 @@
 // ==/UserScript==
 
 $(document).ready(function() {
+    $('body').prepend('<input type="button" value="Hide smoke and pet listings" id="TH" style= "z-index: 20; display: block; left: 620px; top: 84px; position: fixed;">');
 
-    $('.cardContainer_gig1e7').each(function(index) {
-        url = $(this).find("a.anchor_surdeb").attr('href');
-        var that = this;
+    console.log("Beginning Airbnb Filter");
 
-        // Fetch listings and search
-        $.get(url).done(function(data) {
-            //console.log("data returned");
+    // Click on "Hide"  ### No longer works; button was removed
+    $('#TH').click(function(){
 
-            // Smoking allowed?
-            smoke = data.search('allows_smoking":t');
-            //console.log("smoke: " + smoke);
+        $('.cardContainer_gig1e7').each(function(index) {
+            url = $(this).find("a").attr('href');
+            console.log(url);
 
-            // Has pets?
-            pets = data.search('_pets":t');
-            //console.log("pets: " + pets);
+            var that = this;
 
-            // pets and smoke are -1 if not found; probably big number if found
-            allergens = pets + smoke;
+            // Fetch listings and search
+            $.get(url).done(function(data) {
+                console.log("data returned");
 
-            // Hide container
-            if(allergens > 0) {
-                console.log('hide it');
-                $(that).hide();
-            }
+                // Smoking allowed?
+                smoke = data.search('allows_smoking":t');
+                //console.log("smoke: " + smoke);
+
+                // Has pets?
+                pets = data.search('_pets":t');
+                //console.log("pets: " + pets);
+
+                // pets and smoke are -1 if not found; probably big number if found
+                allergens = pets + smoke;
+
+                // Hide container
+                if(allergens > 0) {
+                    //console.log('hide it');
+                    $(that).hide();
+                }
+            });
+
+            // Fix layout; fill in gaps left by hidden listings
+            $("div.cardGrid_o1rkka>div").css("float","left");
         });
 
-        // Fix layout; fill in gaps left by hidden listings
-        $("div.cardGrid_o1rkka>div").css("float","left");
     });
+
 });
