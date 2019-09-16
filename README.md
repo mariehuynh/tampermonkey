@@ -5,6 +5,8 @@ This is a collection of Tampermonkey scripts that I wrote to make the internet b
 
 * **AmazonHistory** - Inserts a button on product pages that links to their price history (I'm currently using camelcamelcamel).
 
+* **AmazonPrimeNowSales** - Hides all items that are not on sale.
+
 * **GSX Sale** - There's no filter on the site to show only the things that are on sale.  This adds a button that provides that filter.  Note: this does not deal with the pagination so if there's nothing on sale on the page, it will hide everything.
 
 * **SafewayCoupon** - They offer almost 400 coupons at a time but I didn't want to sift through what might be useful.  So this adds all of them to my card in case it comes in handy.
