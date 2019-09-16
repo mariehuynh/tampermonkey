@@ -11,11 +11,12 @@ $( document ).ready(function() {
     console.log("Running Amazon Prime Now sales Tampermonkey script now");
 
     // Find the cards
-    $(".product_grid__item__2ggXX").each(function(index,value){
+    $('[class^="product_grid__item__"]').each(function(index,value){
 
         var card = $(this);
-        var onsale = card.has("div").html().search("asin_price__priceDiscount__3hnAu");
+        var onsale = card.has("div").html().search("asin_price__priceDiscount__");
 
+        // Hide items not on sale
         if (onsale == -1) {
             card.hide();
         }
