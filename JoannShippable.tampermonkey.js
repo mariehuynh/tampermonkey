@@ -11,6 +11,6 @@ $( document ).ready(function() {
     $('body').prepend('<input type="button" value="Hide All Non-Shipping" id="button1" style="top: 0px;z-index: 1000; position: sticky;">');
 
     $('#button1').click(function(){
-      	$(".product-grid__item:contains('Not available for shipping')").hide();  // Shows the sale items; this class may well change in the future
+      	$(".product-grid__item:contains('Not available for shipping')").hide();  // Hides unavilable items; this class may well change in the future
     });
 });
