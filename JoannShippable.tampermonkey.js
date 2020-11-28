@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Joann shippable
-// @description Hide nonsales on GSX
+// @description Hide unshippable items on Joann
 // @version     0.1
 // @namespace   http://mariehuynh.com/
 // @match       https://www.joann.com/*
